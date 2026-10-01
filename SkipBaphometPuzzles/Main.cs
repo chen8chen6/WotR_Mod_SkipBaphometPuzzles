@@ -38,7 +38,8 @@ namespace SkipBaphometPuzzles
                 if (loaded) return;
                 loaded = true;
 
-                ShieldMazePuzzleHelper.SkipPuzzle(ref __instance);
+                ShieldMazePuzzleHelper.SkipPuzzle(ref __instance);      //盾牌迷宫
+                DefendersHeartPuzzleHelper.SkipPuzzle(ref __instance);  //铁卫雄心
 
 
             }

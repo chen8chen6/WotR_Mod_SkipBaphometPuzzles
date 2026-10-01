@@ -13,6 +13,8 @@ namespace SkipBaphometPuzzles
 {
     internal class ShieldMazePuzzleHelper
     {
+        //原逻辑: 按下4次按钮后, 判断按钮组合是否正确, 正确则开门
+        //现逻辑: 按下任意按钮后, 直接开门
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             //Guids
