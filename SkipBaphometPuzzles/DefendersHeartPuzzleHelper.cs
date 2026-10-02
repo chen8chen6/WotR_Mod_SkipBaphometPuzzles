@@ -2,6 +2,7 @@
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.JsonSystem;
 using Kingmaker.Designers.EventConditionActionSystem.Actions;
+using Kingmaker.Designers.EventConditionActionSystem.Evaluators;
 using Kingmaker.ElementsSystem;
 using System;
 using System.Collections.Generic;
@@ -27,23 +28,23 @@ namespace SkipBaphometPuzzles
             const int LEVER_DOWN = 1;
             const int LEVER_UP = 2;
 
-            //GameActions used to set flags
-            var setLeverW = new UnlockFlag();
-            setLeverW.flag = ResourcesLibrary.TryGetBlueprint<BlueprintUnlockableFlag>(LEVER_WEST);
-            setLeverW.flagValue = LEVER_DOWN;
-
-            var setLeverE = new UnlockFlag();
-            setLeverE.flag = ResourcesLibrary.TryGetBlueprint<BlueprintUnlockableFlag>(LEVER_EAST);
-            setLeverE.flagValue = LEVER_UP;
-
-            var setLeverS = new UnlockFlag();
-            setLeverS.flag = ResourcesLibrary.TryGetBlueprint<BlueprintUnlockableFlag>(LEVER_SOUTH);
-            setLeverS.flagValue = LEVER_DOWN;
-
-            //Run actions above on shield taken from wall
+            //set lever flags on shield taken from wall
             var actionsOnShieldTaken = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(ON_SHIELD_TAKEN));
-            //pzshield.Actions.Actions.Append(unlockFlag_LeverW);   //TODO: Append接口无效的原因?
-            actionsOnShieldTaken.Actions.Actions = new GameAction[4] { actionsOnShieldTaken.Actions.Actions[0], setLeverW, setLeverE, setLeverS };
+            actionsOnShieldTaken.Actions.Actions
+                = new GameAction[4] {
+                    actionsOnShieldTaken.Actions.Actions[0],
+                    SetLever(LEVER_WEST, LEVER_DOWN, ref __instance),
+                    SetLever(LEVER_EAST, LEVER_UP, ref __instance),
+                    SetLever(LEVER_SOUTH, LEVER_DOWN, ref __instance)
+                };   //TODO: 我记得有个接口可以merge两个actionList
+        }
+
+        static private UnlockFlag SetLever(string guid, int val, ref BlueprintsCache __instance)
+        {
+            UnlockFlag action = new UnlockFlag();
+            action.flag = ResourcesLibrary.TryGetBlueprint<BlueprintUnlockableFlag>(guid);
+            action.flagValue = val;
+            return action;
         }
     }
 }

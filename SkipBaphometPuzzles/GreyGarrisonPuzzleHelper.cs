@@ -19,7 +19,6 @@ namespace SkipBaphometPuzzles
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             //TODO: 检查下如果已经有雕像被激活再开启mod, 是否依旧起效
-            //TODO: 检查下12个AH在运行时是否配置正确
             //Guids
             const string GOLFREY_STATUE_ON      = "1e77061c4862164428a08bbc5716bd5d"; //Statue01_Actions_On
             const string GOLFREY_STATUE_OFF     = "e9432adbdb0b8f24d939fa844d7fbf44"; //Statue01_Actions_Off
@@ -36,28 +35,22 @@ namespace SkipBaphometPuzzles
 
             //Actions to open the door
             var lastStatue = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(YANIEL_STATUE_ON));
-            var checkCombination = (Conditional)lastStatue.Actions.Actions[1];
+            var checkCombination = (Conditional)lastStatue.Actions.Actions[1];  //TODO: .where
             var openDoor = checkCombination.IfTrue;
 
             //Set actions on switching statues to openDoor;
-            SetActions(GOLFREY_STATUE_ON, openDoor, ref __instance);
-            SetActions(GOLFREY_STATUE_OFF, openDoor, ref __instance);
-            SetActions(HERALD_STATUE_ON, openDoor, ref __instance);
-            SetActions(HERALD_STATUE_OFF, openDoor, ref __instance);
-            SetActions(LARIEL_STATUE_ON, openDoor, ref __instance);
-            SetActions(LARIEL_STATUE_OFF, openDoor, ref __instance);
-            SetActions(TARGONA_STATUE_ON, openDoor, ref __instance);
-            SetActions(TARGONA_STATUE_OFF, openDoor, ref __instance);
-            SetActions(ZAKARIUS_STATUE_ON, openDoor, ref __instance);
-            SetActions(ZAKARIUS_STATUE_OFF, openDoor, ref __instance);
-            SetActions(YANIEL_STATUE_ON, openDoor, ref __instance);
-            SetActions(YANIEL_STATUE_OFF, openDoor, ref __instance);
-        }
-
-        private static void SetActions(string guid, ActionList actions, ref BlueprintsCache __instance)
-        {
-            var actionsHolder = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
-            actionsHolder.Actions = actions;
+            BPHelper.SetActions(GOLFREY_STATUE_ON, openDoor, ref __instance);
+            BPHelper.SetActions(GOLFREY_STATUE_OFF, openDoor, ref __instance);
+            BPHelper.SetActions(HERALD_STATUE_ON, openDoor, ref __instance);
+            BPHelper.SetActions(HERALD_STATUE_OFF, openDoor, ref __instance);
+            BPHelper.SetActions(LARIEL_STATUE_ON, openDoor, ref __instance);
+            BPHelper.SetActions(LARIEL_STATUE_OFF, openDoor, ref __instance);
+            BPHelper.SetActions(TARGONA_STATUE_ON, openDoor, ref __instance);
+            BPHelper.SetActions(TARGONA_STATUE_OFF, openDoor, ref __instance);
+            BPHelper.SetActions(ZAKARIUS_STATUE_ON, openDoor, ref __instance);
+            BPHelper.SetActions(ZAKARIUS_STATUE_OFF, openDoor, ref __instance);
+            BPHelper.SetActions(YANIEL_STATUE_ON, openDoor, ref __instance);
+            BPHelper.SetActions(YANIEL_STATUE_OFF, openDoor, ref __instance);
         }
     }
 }
