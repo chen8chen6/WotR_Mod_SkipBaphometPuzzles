@@ -36,7 +36,7 @@ namespace SkipBaphometPuzzles
                     SetLever(LEVER_WEST, LEVER_DOWN, ref __instance),
                     SetLever(LEVER_EAST, LEVER_UP, ref __instance),
                     SetLever(LEVER_SOUTH, LEVER_DOWN, ref __instance)
-                };   //TODO: 我记得有个接口可以merge两个actionList
+                };
         }
 
         static private UnlockFlag SetLever(string guid, int val, ref BlueprintsCache __instance)

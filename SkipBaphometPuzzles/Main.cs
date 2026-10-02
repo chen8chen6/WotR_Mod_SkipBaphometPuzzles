@@ -43,6 +43,7 @@ namespace SkipBaphometPuzzles
                 GreyGarrisonPuzzleHelper.SkipPuzzle(ref __instance);    //灰兵营
                 LostChapelPuzzleHelper.SkipPuzzle(ref __instance);      //失陷教堂
                 CitadelDrezenPuzzleHelper.SkipPuzzle(ref __instance);   //眷泽城要塞
+                SacredLandsPuzzleHelper.SkipPuzzle(ref __instance);     //圣地
 
 
             }
