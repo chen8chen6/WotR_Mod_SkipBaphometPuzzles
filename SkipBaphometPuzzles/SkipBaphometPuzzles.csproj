@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BPHelper.cs" />
+    <Compile Include="CitadelDrezenPuzzleHelper.cs" />
     <Compile Include="DefendersHeartPuzzleHelper.cs" />
     <Compile Include="GreyGarrisonPuzzleHelper.cs" />
     <Compile Include="LostChapelPuzzleHelper.cs" />

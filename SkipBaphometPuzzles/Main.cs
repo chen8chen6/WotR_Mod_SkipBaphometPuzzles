@@ -42,6 +42,7 @@ namespace SkipBaphometPuzzles
                 DefendersHeartPuzzleHelper.SkipPuzzle(ref __instance);  //铁卫雄心
                 GreyGarrisonPuzzleHelper.SkipPuzzle(ref __instance);    //灰兵营
                 LostChapelPuzzleHelper.SkipPuzzle(ref __instance);      //失陷教堂
+                CitadelDrezenPuzzleHelper.SkipPuzzle(ref __instance);   //眷泽城要塞
 
 
             }
