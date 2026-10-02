@@ -13,8 +13,10 @@ namespace SkipBaphometPuzzles
 {
     internal class ShieldMazePuzzleHelper
     {
-        //原逻辑: 按下4次按钮后, 判断按钮组合是否正确, 正确则开门
-        //现逻辑: 按下任意按钮后, 直接开门
+        //原逻辑: 按下按钮时, 将按下的按键依次记录在slot_torture_1,2,3,4中, 同时Pass_Torture_2计数器+1.
+        //        计数器==4时, 播放名为Pass_Torture_2(与计数器同名但guid不同)的cutscene.
+        //        这个cutscene判断按钮组合是否正确, 正确则开门, 失败则清空上述计数器和按键记录.
+        //现逻辑: 按下任意按钮时, 直接开门
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             //Guids
