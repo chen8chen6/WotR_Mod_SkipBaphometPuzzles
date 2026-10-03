@@ -23,14 +23,15 @@ namespace SkipBaphometPuzzles
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             const string PUZZLE = "34a3dfdf62077474293446264a5ff489";   //puzzle
-            const int BTN_NUM = 18; //2 btns per color
-            const int BRIDGE_NUM = 19;  //2 bridges per color + 1 final bridge
+            const int COLOR_NUM = 9;
+            const int COLOR_BRIGE_NUM = 2 * COLOR_NUM;
+            const int BTN_NUM = 2 * COLOR_NUM;
 
-            ActionList riseAllBridges = new ActionList() { Actions = new GameAction[BRIDGE_NUM] };
+            ActionList riseAllBridges = new ActionList() { Actions = new GameAction[COLOR_BRIGE_NUM] };
             var bridgePuzzle = ResourcesLibrary.TryGetBlueprint<BlueprintComponentList>(PUZZLE);
 
             //find actions to rise every bridge
-            for (int idx = 0; idx < BTN_NUM; idx = idx + 2)
+            for (int idx = 0; idx < BTN_NUM; idx += 2)
             {
                 var btn = (GenericInteractionTrigger)bridgePuzzle.ComponentsArray[idx];
 
@@ -41,11 +42,11 @@ namespace SkipBaphometPuzzles
                 riseAllBridges.Actions[idx] = riseBridge1;
                 riseAllBridges.Actions[idx + 1] = riseBridge2;
 
-                if (0 == idx)
+                if (COLOR_NUM - 1 == idx)
                 {
                     var checkAllLampOn= (Conditional)btn.Actions.Actions[6];
-                    var riseFinalBridge = checkAllLampOn.IfTrue.Actions[0];
-                    riseAllBridges.Actions[BRIDGE_NUM - 1] = riseFinalBridge;
+                    var riseFinalBridge = checkAllLampOn.IfTrue;
+                    riseAllBridges = new ActionList(riseAllBridges, riseFinalBridge);
                 }
             }
 
