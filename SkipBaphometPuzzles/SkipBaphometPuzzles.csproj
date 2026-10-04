@@ -69,6 +69,7 @@
     <Compile Include="CitadelDrezenPuzzleHelper.cs" />
     <Compile Include="DefendersHeartPuzzleHelper.cs" />
     <Compile Include="GreyGarrisonPuzzleHelper.cs" />
+    <Compile Include="IvorySanctumPuzzleHelper.cs" />
     <Compile Include="LostChapelPuzzleHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

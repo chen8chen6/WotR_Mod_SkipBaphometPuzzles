@@ -44,6 +44,7 @@ namespace SkipBaphometPuzzles
                 LostChapelPuzzleHelper.SkipPuzzle(ref __instance);      //失陷教堂
                 CitadelDrezenPuzzleHelper.SkipPuzzle(ref __instance);   //眷泽城要塞
                 SacredLandsPuzzleHelper.SkipPuzzle(ref __instance);     //圣地
+                IvorySanctumPuzzleHelper.SkipPuzzle(ref __instance);    //象牙迷堂
 
 
             }
