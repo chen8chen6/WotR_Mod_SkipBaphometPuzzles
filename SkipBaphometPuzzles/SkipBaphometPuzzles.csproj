@@ -74,6 +74,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="MidnightFanePuzzleHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuluraFallPuzzleHelper.cs" />
     <Compile Include="SacredLandsPuzzleHelper.cs" />
     <Compile Include="ShieldMazePuzzleHelper.cs" />
   </ItemGroup>
