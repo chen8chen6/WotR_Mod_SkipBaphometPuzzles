@@ -49,6 +49,7 @@ namespace SkipBaphometPuzzles
                 PuluraFallPuzzleHelper.SkipPuzzle(ref __instance);      //璞露拉瀑布
                 AlushynirraPuzzleHelper.SkipPuzzle(ref __instance);     //深渊
                 GravestoneRockPuzzleHelper.SkipPuzzle(ref __instance);  //墓碑岩(希拉个人任务)
+                IneluctablePrisonPuzzleHelper.SkipPuzzle(ref __instance);//无间囚牢
 
 
             }

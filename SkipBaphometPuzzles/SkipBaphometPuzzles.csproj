@@ -71,6 +71,7 @@
     <Compile Include="DefendersHeartPuzzleHelper.cs" />
     <Compile Include="GravestoneRockPuzzleHelper.cs" />
     <Compile Include="GreyGarrisonPuzzleHelper.cs" />
+    <Compile Include="IneluctablePrisonPuzzleHelper.cs" />
     <Compile Include="IvorySanctumPuzzleHelper.cs" />
     <Compile Include="LostChapelPuzzleHelper.cs" />
     <Compile Include="Main.cs" />

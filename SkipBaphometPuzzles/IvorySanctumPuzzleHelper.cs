@@ -83,7 +83,6 @@ namespace SkipBaphometPuzzles
 
         //原逻辑: 同MainHallPuzzle, 只不过最后执行的不是开门而是检查压力板上是否站人(0563), 是的话才开门.
         //现逻辑: 按下任意按钮, 直接开门.
-
         static private void SkipValutPuzzle(ref BlueprintsCache __instance)
         {
             //Guids
