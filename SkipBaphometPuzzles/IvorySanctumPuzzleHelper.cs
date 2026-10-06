@@ -16,9 +16,9 @@ namespace SkipBaphometPuzzles
     {
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
-            SkipMainHallPuzzle(ref __instance);     //The hall at the center of map, with a large statue inside;
-            SkipYerribethHallPuzzle(ref __instance);//
-            SkipValutPuzzle(ref __instance);
+            SkipMainHallPuzzle(ref __instance);
+            SkipYerribethHallPuzzle(ref __instance);
+            SkipValutPuzzle(ref __instance);        //Valut with a ghost Minotaur boss inside
         }
 
         //原逻辑: 每个按钮MainHallCipher_[0,3,4,5,6]_Actions按下时, 将对应的MainHallPuzzlePlate_[0,3,4,5,6]置为1,

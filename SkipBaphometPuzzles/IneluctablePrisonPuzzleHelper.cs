@@ -15,8 +15,8 @@ namespace SkipBaphometPuzzles
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             SkipLinnormRoomPuzzle(ref __instance);
-            SkipMinotaurRoomPuzzle(ref __instance);
-            SkipGuardRoomPuzzle(ref __instance);
+            SkipMinotaurRoomPuzzle(ref __instance); //Room with Bafomet's super Minotaur
+            SkipGuardRoomPuzzle(ref __instance);    //Room with a hole to outside on wall
         }
 
         static private void SkipLinnormRoomPuzzle(ref BlueprintsCache __instance)
