@@ -36,7 +36,7 @@ namespace SkipBaphometPuzzles
                 "b870ef4987395914a91e26fcfb06d128",   //MainHallCipher_6_Actions
             };
 
-            ActionList revealChest = CipherChecker(BTN[Square], 2, ref __instance).IfTrue;
+            ActionList revealChest = BPHelper.GetChecker(BTN[Square], 2, ref __instance).IfTrue;
 
             foreach (string btn in BTN)
                 BPHelper.SetActions(btn, revealChest, ref __instance);
@@ -68,8 +68,8 @@ namespace SkipBaphometPuzzles
             const string SCENE_OPEN_DOOR = "a6076df5e5d7fda4e8986d1ad35df773";  //YeribethCipherDoorSuccess
 
             //Do both thing in one ActionList
-            ActionList openDoor = CipherChecker(BTN[Circle], 2, ref __instance).IfTrue;
-            ActionList revealChest = CipherChecker(BTN[Hexagram], 2, ref __instance).IfTrue;
+            ActionList openDoor = BPHelper.GetChecker(BTN[Circle], 2, ref __instance).IfTrue;
+            ActionList revealChest = BPHelper.GetChecker(BTN[Hexagram], 2, ref __instance).IfTrue;
             var doorAndChest = new ActionList(openDoor, revealChest);
 
             //Instandly finish camera rotation
@@ -96,9 +96,9 @@ namespace SkipBaphometPuzzles
             };
 
             //Find actions to open door
-            ActionList checkPressurePlates = CipherChecker(BTN[Triangle], 2, ref __instance).IfTrue;
+            ActionList checkPressurePlates = BPHelper.GetChecker(BTN[Triangle], 2, ref __instance).IfTrue;
             RunActionHolder checkerHolder = (RunActionHolder)checkPressurePlates.Actions[0];
-            Conditional pressurePlateChecker = CipherChecker(checkerHolder.Holder.Guid.ToString(), 0, ref __instance);
+            Conditional pressurePlateChecker = BPHelper.GetChecker(checkerHolder.Holder.Guid.ToString(), 0, ref __instance);
             ActionList openDoor = pressurePlateChecker.IfTrue;
 
             foreach (string btn in BTN)
@@ -111,14 +111,5 @@ namespace SkipBaphometPuzzles
         private const int Square = 2;
         private const int Pentagram = 3;
         private const int Hexagram = 4;
-
-
-        static private Conditional CipherChecker(string guid, int checkerPos, ref BlueprintsCache __instance)
-        {
-            var ah = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
-            return (Conditional)ah.Actions.Actions[checkerPos];
-        }
-
-
     }
 }

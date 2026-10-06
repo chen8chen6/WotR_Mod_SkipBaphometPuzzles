@@ -47,6 +47,7 @@ namespace SkipBaphometPuzzles
                 IvorySanctumPuzzleHelper.SkipPuzzle(ref __instance);    //象牙迷堂
                 MidnightFanePuzzleHelper.SkipPuzzle(ref __instance);    //午夜庙宇
                 PuluraFallPuzzleHelper.SkipPuzzle(ref __instance);      //璞露拉瀑布
+                AlushynirraPuzzleHelper.SkipPuzzle(ref __instance);     //深渊
 
 
             }
