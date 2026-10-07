@@ -65,7 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AluresLabPuzzleHelper.cs" />
+    <Compile Include="AreelusLabPuzzleHelper.cs" />
     <Compile Include="AlushynirraPuzzleHelper.cs" />
     <Compile Include="BPHelper.cs" />
     <Compile Include="CitadelDrezenPuzzleHelper.cs" />

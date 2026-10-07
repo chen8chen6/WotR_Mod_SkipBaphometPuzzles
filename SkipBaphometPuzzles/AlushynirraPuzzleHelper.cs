@@ -30,6 +30,13 @@ namespace SkipBaphometPuzzles
             const string BTN_EAST = "601b9d2d7d4ecfd4482789ebc74f9ef4"; //Button1_CheckPassedActions
             const string BTN_WEST = "a058fae2b60be214f85adfcdc59196b2"; //Button2_CheckPassedActions
 
+            //idx for target actionList
+            const int PLATFORM_NUM = 5;
+            const int IDX_SET_FLAG = PLATFORM_NUM;
+            const int IDX_SET_PLAT = IDX_SET_FLAG + PLATFORM_NUM;
+            const int IDX_SHOW_PLAT = IDX_SET_PLAT + PLATFORM_NUM;
+            const int IDX_CUTS = IDX_SHOW_PLAT + PLATFORM_NUM;
+
             var btnEast = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(BTN_EAST));
             var btnWest = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(BTN_WEST));
 
@@ -38,12 +45,6 @@ namespace SkipBaphometPuzzles
             var finalPlat = (Conditional)btnEast.Actions.Actions[16];
 
             //pathToChest.actions[] = {hidePlat_[1,...,5], setFlag_[1,...,5], setDevStatus_[1,...,5], showPlat_[1,...,5], navmecCuts, finalPlat}
-            const int PLATFORM_NUM = 5;
-            const int IDX_SET_FLAG = PLATFORM_NUM;
-            const int IDX_SET_PLAT = IDX_SET_FLAG + PLATFORM_NUM;
-            const int IDX_SHOW_PLAT = IDX_SET_PLAT + PLATFORM_NUM;
-            const int IDX_CUTS = IDX_SHOW_PLAT + PLATFORM_NUM;
-
             ActionList pathToChest = new ActionList() { Actions = new GameAction[PLATFORM_NUM * 4 + 2] };
             for (int i = 0; i < PLATFORM_NUM; ++i)
             {
@@ -59,6 +60,7 @@ namespace SkipBaphometPuzzles
             pathToChest.Actions[IDX_CUTS] = navmecCuts;
             pathToChest.Actions[IDX_CUTS + 1] = finalPlat;
 
+            //Clear path to chest on any btn pressed
             btnEast.Actions = pathToChest;
             btnWest.Actions = pathToChest;
         }
@@ -72,6 +74,13 @@ namespace SkipBaphometPuzzles
             const string BTN_WEST = "b1fff861ca9511a4fb91f9d8c60371a4"; //HigherButton1_CheckPassedActions
             const string BTN_EAST = "4e4b41fd8fd7908428fed759be779037"; //HigherButton2_CheckPassedActions
             const string SET_DEVS = "2160a6a9322e033418dec3506c327eaa"; //PuzzleSetStateHigher_Holder
+            
+            //idx for target actionList
+            const int PLATFORM_NUM = 5;
+            const int IDX_SET_FLAG = PLATFORM_NUM;
+            const int IDX_SET_PLAT = IDX_SET_FLAG + PLATFORM_NUM;
+            const int IDX_SHOW_PLAT = IDX_SET_PLAT + 1;
+            const int IDX_CUTS = IDX_SHOW_PLAT + PLATFORM_NUM;
 
             var btnWest = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(BTN_WEST));
             var btnEast = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(BTN_EAST));
@@ -82,12 +91,6 @@ namespace SkipBaphometPuzzles
             var navmecCuts = (RunActionHolder)btnWest.Actions.Actions[11];
 
             //pathToChest.actions[] = {hidePlat_[1,...,5], setFlag_[1,...,5], setStatus(AcitonsHolder), showPlat_[1,...,5], navmecCuts(ActionHolder)}
-            const int PLATFORM_NUM = 5;
-            const int IDX_SET_FLAG = PLATFORM_NUM;
-            const int IDX_SET_PLAT = IDX_SET_FLAG + PLATFORM_NUM;
-            const int IDX_SHOW_PLAT = IDX_SET_PLAT + 1;
-            const int IDX_CUTS = IDX_SHOW_PLAT + PLATFORM_NUM;
-
             ActionList pathToChest = new ActionList() { Actions = new GameAction[PLATFORM_NUM * 3 + 3] };
             for (int i = 0; i < PLATFORM_NUM;  ++i)
             {
@@ -102,6 +105,7 @@ namespace SkipBaphometPuzzles
             pathToChest.Actions[IDX_SET_PLAT] = setDevStatus;
             pathToChest.Actions[IDX_CUTS] = navmecCuts;
 
+            //Clear path to chest on any btn pressed
             btnWest.Actions = pathToChest;
             btnEast.Actions = pathToChest;
         }

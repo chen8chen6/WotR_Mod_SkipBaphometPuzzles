@@ -50,7 +50,7 @@ namespace SkipBaphometPuzzles
                 AlushynirraPuzzleHelper.SkipPuzzle(ref __instance);     //深渊
                 GravestoneRockPuzzleHelper.SkipPuzzle(ref __instance);  //墓碑岩(希拉个人任务)
                 IneluctablePrisonPuzzleHelper.SkipPuzzle(ref __instance);//无间囚牢
-                AluresLabPuzzleHelper.SkipPuzzle(ref __instance);       //阿露瑞实验室
+                AreelusLabPuzzleHelper.SkipPuzzle(ref __instance);       //阿露瑞实验室
             }
         }
     }

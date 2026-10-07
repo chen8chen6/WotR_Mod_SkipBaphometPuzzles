@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class AluresLabPuzzleHelper
+    internal class AreelusLabPuzzleHelper
     {
         //原逻辑: 依次点击摇篮->儿童绘画->魔法课本时, 变量ALR_TE_Sequence会逐渐增加, 
         //        最后点击课本时, 检测ALR_TE_Sequence是否为2, 如果是的话显示柜子里的手套.

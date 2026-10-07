@@ -18,7 +18,6 @@ namespace SkipBaphometPuzzles
         //现逻辑: 任意雕像在切换On/Off时, 直接执行开门动作.
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
-            //TODO: 检查下如果已经有雕像被激活再开启mod, 是否依旧起效
             //Guids
             const string GOLFREY_STATUE_ON      = "1e77061c4862164428a08bbc5716bd5d"; //Statue01_Actions_On
             const string GOLFREY_STATUE_OFF     = "e9432adbdb0b8f24d939fa844d7fbf44"; //Statue01_Actions_Off
@@ -35,7 +34,7 @@ namespace SkipBaphometPuzzles
 
             //Actions to open the door
             var lastStatue = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(YANIEL_STATUE_ON));
-            var checkCombination = (Conditional)lastStatue.Actions.Actions[1];  //TODO: .where
+            var checkCombination = (Conditional)lastStatue.Actions.Actions[1];
             var openDoor = checkCombination.IfTrue;
 
             //Set actions on switching statues to openDoor;
