@@ -42,7 +42,7 @@ namespace SkipBaphometPuzzles
                 riseAllBridges.Actions[idx] = riseBridge1;
                 riseAllBridges.Actions[idx + 1] = riseBridge2;
 
-                bool isLastLoop = (COLOR_NUM - 1 == idx);
+                bool isLastLoop = (BTN_NUM <= idx + 2);
                 if (isLastLoop)
                 {
                     var checkAllLampOn= (Conditional)btn.Actions.Actions[6];
