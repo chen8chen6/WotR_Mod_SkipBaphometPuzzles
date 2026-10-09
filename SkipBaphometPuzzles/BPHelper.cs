@@ -12,8 +12,12 @@ namespace SkipBaphometPuzzles
 {
     internal class BPHelper
     {
+        static public string MOD_GUID_DLC2_THEATRE_SKIP_PUZZLE = "D1505EE1A6E448B4AE84660FB712F280";
+
         static public void SetActions(string guid, ActionList actions, ref BlueprintsCache __instance)
         {
+            if ("" == guid || null == guid)
+                return;
             ActionsHolder ah = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
             ah.Actions = actions;
         }
