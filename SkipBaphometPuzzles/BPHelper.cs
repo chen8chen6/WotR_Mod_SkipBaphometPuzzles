@@ -13,6 +13,7 @@ namespace SkipBaphometPuzzles
     internal class BPHelper
     {
         static public string MOD_GUID_DLC2_THEATRE_SKIP_PUZZLE = "D1505EE1A6E448B4AE84660FB712F280";
+        static public string MOD_GUID_DLC5_WIZARD_TOWER_SKIP_PUZZLE = "661040DD5BF24CC68E5627407660531D";
 
         static public void SetActions(string guid, ActionList actions, ref BlueprintsCache __instance)
         {
@@ -26,6 +27,12 @@ namespace SkipBaphometPuzzles
         {
             var ah = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
             return (Conditional)ah.Actions.Actions[idx];
+        }
+
+        static public GameAction GetAction(string guid, int idx, ref BlueprintsCache __instance)
+        {
+            var ah = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
+            return ah.Actions.Actions[idx];
         }
     }
 }

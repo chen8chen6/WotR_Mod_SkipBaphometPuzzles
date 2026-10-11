@@ -15,6 +15,10 @@ namespace SkipBaphometPuzzles
 {
     internal class DLC2_TheatrePuzzleHelper
     {
+        //原逻辑: 游戏为11座桥启动22个etude([ ,2,...,11]State_[0,1])监控拉杆状态(Leaver_[1,...,9]),
+        //        State_0负责把桥移动回原始位置, State_1负责把桥从原始位置移开(升起<-->落下),
+        //现逻辑: 所有的State一旦触发, 都会把所有桥降下, 同时停止监控拉杆状态.
+        //备注:   Bridge4没发现在哪控制, 不过此时地图上所有点都已经联通可达了
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             //Complete all etudes which oversee lever states
@@ -42,7 +46,10 @@ namespace SkipBaphometPuzzles
 
             //Set every trigger to run the actionHolder
             var runSkipPuzzle = new ActionList() { Actions = new GameAction[1]};
-            runSkipPuzzle.Actions[0] = new RunActionHolder() { Holder = skipPuzzle.ToReference<ActionsReference>() };
+            runSkipPuzzle.Actions[0] = new RunActionHolder() {
+                Holder = skipPuzzle.ToReference<ActionsReference>(),
+                Comment = skipPuzzle.NameSafe(),
+            };
 
             for (int i = 1; i < TRIGGER_BRIDGE_TO_MOVE.Length; ++i)
             {

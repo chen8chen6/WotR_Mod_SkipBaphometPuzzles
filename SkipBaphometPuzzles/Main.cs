@@ -55,6 +55,10 @@ namespace SkipBaphometPuzzles
                 //DLC2 - Into Ashes
                 DLC2_TheatrePuzzleHelper.SkipPuzzle(ref __instance);    //剧院
                 DLC2_RichHousePuzzleHelper.SkipPuzzle(ref __instance);  //富人区豪宅
+
+                //DLC5 - The Lord of Nothing
+                DLC5_WizardsTowerPuzzleHelper.SkipPuzzle(ref __instance);   //法师塔
+                DLC5_ShadowWorldPuzzleHelper.SkipPuzzle(ref __instance);    //影界
             }
         }
     }

@@ -72,6 +72,7 @@
     <Compile Include="DefendersHeartPuzzleHelper.cs" />
     <Compile Include="DLC2_RichHousePuzzleHelper.cs" />
     <Compile Include="DLC2_TheatrePuzzleHelper.cs" />
+    <Compile Include="DLC5_ShadowWorldPuzzleHelper.cs" />
     <Compile Include="GravestoneRockPuzzleHelper.cs" />
     <Compile Include="GreyGarrisonPuzzleHelper.cs" />
     <Compile Include="IneluctablePrisonPuzzleHelper.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="PuluraFallPuzzleHelper.cs" />
     <Compile Include="SacredLandsPuzzleHelper.cs" />
     <Compile Include="ShieldMazePuzzleHelper.cs" />
+    <Compile Include="DLC5_WizardsTowerPuzzleHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.json">
