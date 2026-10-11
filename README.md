@@ -16,7 +16,7 @@ Lost Chapel - Desna altar: Summon Arueshalae by interacting with any music instr
 
 Citadel Drezen - Rotating Circles before Sword of Valor: Solve puzzle by pressing any button.
 
-Scared Lands - Briges of Nine Colors: Rise all bridges on any button pressed.
+Scared Lands - Bridges of Nine Colors: Rise all bridges on any button pressed.
 
 Ivory Sanctum - Puzzles of 03456 angles: Solve puzzle by pressing any button.
 
@@ -26,11 +26,26 @@ Purula Fall - Fourteen Fountain: Solve puzzle by touching any fountain(except Cu
 
 Alushynirra - Rotating Platforms: Clear the path to stash by pressing any button.
 
-Gravestone Rock - Four color buttons before Radiance: Solve puzzle by pressing any button.
+Gravestone Rock - Four color buttons: Open door and avoid trap chest by pressing any button.
 
 Ineluctable Prison - Puzzles of 03456 angles: Solve puzzle by pressing any button.
 
 Areelu's Lab - Credle Puzzle: Unlock true ending conditon "You really did pick up my child's favourite belongs first" by touching the credle;
+
+DLC2 - Into Ashes
+
+Theatre - Bridge puzzle: Lower all bridges on any lever pulled.
+
+Rich Quarter - Steam Wall Puzzle: Disable all steam walls on any lever pulled.
+
+DLC5 - The Lord of Nothing
+
+Wizard Tower - Torch Puzzle: Reveal the secret door on any torch touched.
+
+Shodow World - Lever Puzzle: Pull any lever twice to find both secrets. (Each lever group has 2 solutions)
+	(e.g. Pull any lever to reveal the path to Chained Darkness, then pull it again to gain access to the stash)
+
+Shodow World - Chained Darkness: Reveal "Release" button on any lever pulled.
 
 # Preview:
 
@@ -97,6 +112,21 @@ All contributers of ToyBox[https://www.nexusmods.com/pathfinderwrathoftherighteo
 无间囚牢 - 零三四五六角解谜: 点击任意按钮打开密门/显示隐藏宝箱.
 
 阿露瑞实验室 - 触碰顺序: 点击摇篮直接解锁真结局条件"你真的先拿了我孩子最喜欢的东西".
+
+DLC2 - 浴灰而行
+
+剧院 - 木桥解谜: 点击任意拉杆降下所有木桥.
+
+富人区 - 蒸汽墙: 点击任意拉杆关闭所有蒸汽墙.
+
+DLC5 - 虚无之主
+
+法师塔 - 火把解谜: 点击任意火把显示密门.
+
+影界 - 拉杆解谜: 点击任意拉杆2次获取全部奖励. (每组拉杆有2种解法)
+	(比如: 点第一次拉杆, 会打开前往受缚黑暗的通路. 点第二次拉杆, 会显示隐藏的战利品)
+
+影界 - 受缚的黑暗: 点击任意拉杆显示"释放"按钮.
 
 # 效果预览
 
