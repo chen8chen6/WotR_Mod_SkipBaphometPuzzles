@@ -25,14 +25,18 @@ namespace SkipBaphometPuzzles
 
         static public Conditional GetChecker(string guid, int idx, ref BlueprintsCache __instance)
         {
-            var ah = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
-            return (Conditional)ah.Actions.Actions[idx];
+            return (Conditional)GetAction(guid, idx, ref __instance);
         }
 
         static public GameAction GetAction(string guid, int idx, ref BlueprintsCache __instance)
         {
             var ah = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(guid));
             return ah.Actions.Actions[idx];
+        }
+
+        static public void SetCheckerAlwaysReturnTrue(Conditional checker)
+        {
+            checker.ConditionsChecker.Conditions = null;
         }
     }
 }

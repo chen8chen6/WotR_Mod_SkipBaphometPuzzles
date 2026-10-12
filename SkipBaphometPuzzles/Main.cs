@@ -52,6 +52,9 @@ namespace SkipBaphometPuzzles
                 IneluctablePrisonPuzzleHelper.SkipPuzzle(ref __instance);//无间囚牢
                 AreelusLabPuzzleHelper.SkipPuzzle(ref __instance);       //阿露瑞实验室
 
+                //DLC1 - 
+                DLC1_OtherSideOfThresholdPuzzleHelper.SkipPuzzle(ref __instance);   //阀域的另一面
+
                 //DLC2 - Into Ashes
                 DLC2_TheatrePuzzleHelper.SkipPuzzle(ref __instance);    //剧院
                 DLC2_RichHousePuzzleHelper.SkipPuzzle(ref __instance);  //富人区豪宅
