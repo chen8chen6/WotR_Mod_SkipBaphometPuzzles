@@ -1,4 +1,5 @@
-﻿using Kingmaker.Blueprints;
+﻿using Kingmaker.AreaLogic.Etudes;
+using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.JsonSystem;
 using Kingmaker.Designers.EventConditionActionSystem.Actions;
 using Kingmaker.ElementsSystem;
@@ -38,5 +39,11 @@ namespace SkipBaphometPuzzles
         {
             checker.ConditionsChecker.Conditions = null;
         }
+
+        static public void SetCheckerAlwaysReturnTrue(BlueprintEtude checker)
+        {
+            checker.ActivationCondition.Conditions = null;
+        }
+
     }
 }

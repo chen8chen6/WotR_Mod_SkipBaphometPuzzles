@@ -54,6 +54,7 @@ namespace SkipBaphometPuzzles
 
                 //DLC1 - 
                 DLC1_OtherSideOfThresholdPuzzleHelper.SkipPuzzle(ref __instance);   //阀域的另一面
+                DLC1_DesolateHovelPuzzleHelper.SkipPuzzle(ref __instance);  //破败陋居
 
                 //DLC2 - Into Ashes
                 DLC2_TheatrePuzzleHelper.SkipPuzzle(ref __instance);    //剧院
