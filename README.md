@@ -6,6 +6,8 @@
 
 # Puzzle to Skip
 
+=== Main Campaign ===
+
 Shield Maze - Four color buttons before Radiance: Solve puzzle by pressing any button. 
 
 Defenders Heart - Three levers in basement: Solve puzzle by taking the shield off wall and pressing the button under it.
@@ -32,13 +34,25 @@ Ineluctable Prison - Puzzles of 03456 angles: Solve puzzle by pressing any butto
 
 Areelu's Lab - Credle Puzzle: Unlock true ending conditon "You really did pick up my child's favourite belongs first" by touching the credle;
 
-DLC2 - Into Ashes
+=== DLC1 - Inevitable Excess ===
+
+Other Side of Threshold - Spinner Puzzle: Reveal secret platform on lever pulled.
+
+Other Side of Threshold - Binary Puzzle: Repair lever on any of "ABC" slot interacted.
+
+Desolate Hovel - Paradox Puzzle: Reveal Areelu when users step in the house.
+
+Commanders Court - Portal Puzzle: Summon wish portal on any chest interacted.
+
+Valmalloss Threshold - Clock Puzzle: Open both paths on any clock device touched.
+
+=== DLC2 - Into Ashes ===
 
 Theatre - Bridge puzzle: Lower all bridges on any lever pulled.
 
 Rich Quarter - Steam Wall Puzzle: Disable all steam walls on any lever pulled.
 
-DLC5 - The Lord of Nothing
+=== DLC5 - The Lord of Nothing ===
 
 Wizard Tower - Torch Puzzle: Reveal the secret door on any torch touched.
 
@@ -87,6 +101,8 @@ All contributers of ToyBox[https://www.nexusmods.com/pathfinderwrathoftherighteo
 
 # 可跳过的解谜
 
+=== 主战役 ===
+
 盾牌迷宫 - 辉光前的四色按钮: 点击任意按钮打开密门.
 
 铁卫雄心 - 地下室的3根拉杆: 摘下墙上的盾牌后, 点击出现的按钮打开密门.
@@ -113,13 +129,25 @@ All contributers of ToyBox[https://www.nexusmods.com/pathfinderwrathoftherighteo
 
 阿露瑞实验室 - 触碰顺序: 点击摇篮直接解锁真结局条件"你真的先拿了我孩子最喜欢的东西".
 
-DLC2 - 浴灰而行
+=== DLC1 - 无解的超量 ===
+
+阀域的另一面 - 转轮解谜: 点击拉杆显示隐藏平台.
+
+阀域的另一面 - 二进制解谜: 与任意 "ABC" 插槽互动修复拉杆.
+
+破败陋居 - 悖论解谜: 进屋子直接见阿瑞露.
+
+指挥官的庭园 - 愿望传送门: 与任意宝箱交互召唤传送门.
+
+瓦尔码络斯的阀域 - 表盘解谜: 点击任意时钟装置打开通往主战役恒则兵和最终战场的道路.
+
+=== DLC2 - 浴灰而行 ===
 
 剧院 - 木桥解谜: 点击任意拉杆降下所有木桥.
 
 富人区 - 蒸汽墙: 点击任意拉杆关闭所有蒸汽墙.
 
-DLC5 - 虚无之主
+=== DLC5 - 虚无之主 ===
 
 法师塔 - 火把解谜: 点击任意火把显示密门.
 
