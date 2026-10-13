@@ -15,11 +15,11 @@ namespace SkipBaphometPuzzles
     {
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
-            const string BALANCE_PUZZLE = "7f583030c8c7485c8c44ca9d6f2659c9";    //DLC1_AreeluHouse_PuzzleDone
+            const string PARADOX_PUZZLE = "7f583030c8c7485c8c44ca9d6f2659c9";    //DLC1_AreeluHouse_PuzzleDone
 
-            var banlanceChecker = ResourcesLibrary.TryGetBlueprint<BlueprintEtude>(BALANCE_PUZZLE);
+            var paradoxChecker = ResourcesLibrary.TryGetBlueprint<BlueprintEtude>(PARADOX_PUZZLE);
 
-            BPHelper.SetCheckerAlwaysReturnTrue(banlanceChecker);
+            BPHelper.SetCheckerAlwaysReturnTrue(paradoxChecker);
             //这种改法直接就解锁了 TODO: 用reflection
         }
     }
