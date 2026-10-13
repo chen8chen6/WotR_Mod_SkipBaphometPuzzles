@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC2_RichHousePuzzleHelper
+    internal class RichHousePuzzleHelper
     {
         //原逻辑: DLC2_RichQuarter启动了3个etude(SteamWall, PinkWall, OrangeWall)检测炉子的状态,
         //        当Purple, Pink, Orange这3个flag为1时, 对应的蒸汽墙消失.

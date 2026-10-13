@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC1_ValmallossThresholdPuzzleHelper
+    internal class ValmallossThresholdPuzzleHelper
     {
         //原逻辑: 3个装置(ClockDevice[A,B,C]_Actions)分别控制时分秒,
         //       当Way2OrderCheck_Actions检测到时分秒全为6时, 打开通往恒则兵的道路.

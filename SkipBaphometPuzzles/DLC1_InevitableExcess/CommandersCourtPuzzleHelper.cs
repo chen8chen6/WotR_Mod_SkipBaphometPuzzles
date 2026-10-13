@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC1_CommandersCourtPuzzleHelper
+    internal class CommandersCourtPuzzleHelper
     {
         //原逻辑: TrashAzata_QuestItemsList_slotcheck_Action在与地面宝箱交互后, 判断置入物品是否正确,
         //        正确则召唤愿望传送门

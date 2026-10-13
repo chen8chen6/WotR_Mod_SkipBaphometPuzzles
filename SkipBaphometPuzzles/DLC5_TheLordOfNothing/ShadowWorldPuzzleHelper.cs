@@ -15,7 +15,7 @@ using static RootMotion.FinalIK.GrounderQuadruped;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC5_ShadowWorldPuzzleHelper
+    internal class ShadowWorldPuzzleHelper
     {
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {

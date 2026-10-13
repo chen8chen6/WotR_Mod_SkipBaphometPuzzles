@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC5_WizardsTowerPuzzleHelper
+    internal class WizardsTowerPuzzleHelper
     {
         //原逻辑: 每根火把(DLC5_GoblinsPartyInTheTower_Puzzle_Torch_[1,...,6]_[ON,OFF])都维护自己的状态(DLC5_GoblinsPartyInTheTower_Puzzle_Torch_[1,...,6])
         //        检测到只有2, 6点燃时, 播放DLC5_GoblinsPartyInTheTower_Puzzle_DoorOpen显示密门

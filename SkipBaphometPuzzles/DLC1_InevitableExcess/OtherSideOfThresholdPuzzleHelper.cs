@@ -7,7 +7,7 @@ using Kingmaker.Designers.EventConditionActionSystem.Events;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC1_OtherSideOfThresholdPuzzleHelper
+    internal class OtherSideOfThresholdPuzzleHelper
     {
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {

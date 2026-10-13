@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC1_DesolateHovelPuzzleHelper
+    internal class DesolateHovelPuzzleHelper
     {
         //原逻辑: 有4个Etude(DLC1_AreeluHouse_[Vase, Oven, CradleI, TableI]tems)处理对应物件的放入/取出动作,
         //       将对应的计数器(itemsPut[Law,Chaos])进行增减操作.

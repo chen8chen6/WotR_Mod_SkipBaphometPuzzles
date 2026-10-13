@@ -52,19 +52,19 @@ namespace SkipBaphometPuzzles
                 IneluctablePrisonPuzzleHelper.SkipPuzzle(ref __instance);//无间囚牢
                 AreelusLabPuzzleHelper.SkipPuzzle(ref __instance);       //阿露瑞实验室
 
-                //DLC1 - 
-                DLC1_OtherSideOfThresholdPuzzleHelper.SkipPuzzle(ref __instance);   //阀域的另一面
-                DLC1_DesolateHovelPuzzleHelper.SkipPuzzle(ref __instance);          //破败陋居
-                DLC1_CommandersCourtPuzzleHelper.SkipPuzzle(ref __instance);        //指挥官的庭园
-                DLC1_ValmallossThresholdPuzzleHelper.SkipPuzzle(ref __instance);    //瓦尔码络斯的阀域
+                //DLC1 - Inevitable Excess
+                OtherSideOfThresholdPuzzleHelper.SkipPuzzle(ref __instance);    //阀域的另一面
+                DesolateHovelPuzzleHelper.SkipPuzzle(ref __instance);           //破败陋居
+                CommandersCourtPuzzleHelper.SkipPuzzle(ref __instance);         //指挥官的庭园
+                ValmallossThresholdPuzzleHelper.SkipPuzzle(ref __instance);     //瓦尔码络斯的阀域
 
                 //DLC2 - Into Ashes
-                DLC2_TheatrePuzzleHelper.SkipPuzzle(ref __instance);    //剧院
-                DLC2_RichHousePuzzleHelper.SkipPuzzle(ref __instance);  //富人区豪宅
+                TheatrePuzzleHelper.SkipPuzzle(ref __instance);         //剧院
+                RichHousePuzzleHelper.SkipPuzzle(ref __instance);       //富人区豪宅
 
                 //DLC5 - The Lord of Nothing
-                DLC5_WizardsTowerPuzzleHelper.SkipPuzzle(ref __instance);   //法师塔
-                DLC5_ShadowWorldPuzzleHelper.SkipPuzzle(ref __instance);    //影界
+                WizardsTowerPuzzleHelper.SkipPuzzle(ref __instance);    //法师塔
+                ShadowWorldPuzzleHelper.SkipPuzzle(ref __instance);     //影界
             }
         }
     }

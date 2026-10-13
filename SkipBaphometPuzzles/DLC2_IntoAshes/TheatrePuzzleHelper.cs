@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace SkipBaphometPuzzles
 {
-    internal class DLC2_TheatrePuzzleHelper
+    internal class TheatrePuzzleHelper
     {
         //原逻辑: 游戏为11座桥启动22个etude([ ,2,...,11]State_[0,1])监控拉杆状态(Leaver_[1,...,9]),
         //        State_0负责把桥移动回原始位置, State_1负责把桥从原始位置移开(升起<-->落下),
