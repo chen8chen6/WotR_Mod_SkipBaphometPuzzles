@@ -49,8 +49,8 @@ namespace SkipBaphometPuzzles
                 PuluraFallPuzzleHelper.SkipPuzzle(ref __instance);      //璞露拉瀑布
                 AlushynirraPuzzleHelper.SkipPuzzle(ref __instance);     //深渊
                 GravestoneRockPuzzleHelper.SkipPuzzle(ref __instance);  //墓碑岩(希拉个人任务)
-                IneluctablePrisonPuzzleHelper.SkipPuzzle(ref __instance);//无间囚牢
-                AreelusLabPuzzleHelper.SkipPuzzle(ref __instance);       //阿露瑞实验室
+                IneluctablePrisonPuzzleHelper.SkipPuzzle(ref __instance);   //无间囚牢
+                AreelusLabPuzzleHelper.SkipPuzzle(ref __instance);      //阿露瑞实验室
 
                 //DLC1 - Inevitable Excess
                 OtherSideOfThresholdPuzzleHelper.SkipPuzzle(ref __instance);    //阀域的另一面

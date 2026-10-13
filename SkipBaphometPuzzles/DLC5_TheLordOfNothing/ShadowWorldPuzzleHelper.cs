@@ -64,8 +64,6 @@ namespace SkipBaphometPuzzles
                 "8fcbd9089cef4d46a9f84b41b2d68213",     //ChainedDarkness_Puzzle_Step3
             };
 
-            const Condition[] CHECKER_ALWAYS_RETUR_TRUE = null;
-
             var firstLever = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(FIRST_LEVER));
 
             //move to step2 on any lever pulled
@@ -75,8 +73,8 @@ namespace SkipBaphometPuzzles
             //show release button on step2 starts
             foreach (string step in STEP)
             {
-                var s = ResourcesLibrary.TryGetBlueprint<BlueprintEtude>(step);
-                s.ActivationCondition.Conditions = CHECKER_ALWAYS_RETUR_TRUE;
+                var checker = ResourcesLibrary.TryGetBlueprint<BlueprintEtude>(step);
+                BPHelper.SetCheckerAlwaysReturnTrue(checker);
             }
         }
 

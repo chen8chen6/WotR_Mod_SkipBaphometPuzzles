@@ -68,9 +68,7 @@ namespace SkipBaphometPuzzles
 
             //Run actions on any btn pressed
             foreach (string btn in btns)
-            {
                 BPHelper.SetActions(btn, actionsOnRightCode, ref __instance);
-            }
         }
 
         //Index for btn array

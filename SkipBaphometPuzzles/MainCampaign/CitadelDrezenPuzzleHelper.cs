@@ -18,12 +18,9 @@ namespace SkipBaphometPuzzles
     {
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
-            const string UNHOLY_SYMBOL_CHECKER = "2cc78b0eed55d124f816a3aa2c7e7a3f"; //CompletelyDeactivatePuzzleTrap
-            const Condition[] CHECKER_ALWAYS_RETURN_TRUE = null;
-
-            var checker = (ActionsHolder)__instance.Load(BlueprintGuid.Parse(UNHOLY_SYMBOL_CHECKER));
-            var checkCombination = (Conditional)checker.Actions.Actions[0];
-            checkCombination.ConditionsChecker.Conditions = CHECKER_ALWAYS_RETURN_TRUE;
+            const string UNHOLY_SYMBOL_CHECKER = "2cc78b0eed55d124f816a3aa2c7e7a3f";    //CompletelyDeactivatePuzzleTrap
+            var checker = BPHelper.GetChecker(UNHOLY_SYMBOL_CHECKER, 0, ref __instance);
+            BPHelper.SetCheckerAlwaysReturnTrue(checker);
         }
     }
 }
