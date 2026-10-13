@@ -13,6 +13,10 @@ namespace SkipBaphometPuzzles
 {
     internal class DLC1_ValmallossThresholdPuzzleHelper
     {
+        //原逻辑: 3个装置(ClockDevice[A,B,C]_Actions)分别控制时分秒,
+        //       当Way2OrderCheck_Actions检测到时分秒全为6时, 打开通往恒则兵的道路.
+        //       当Way2FinalCheck_Actions检测到时分秒全为12时, 打开通往DLC最终战场的道路.
+        //现逻辑: 当Way2OrderCheck_Actions无条件打开通往恒则兵的道路, 然后打开通往DLC最终战场的道路.
         static public void SkipPuzzle(ref BlueprintsCache __instance)
         {
             //Guids

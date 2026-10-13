@@ -70,7 +70,7 @@
     <Compile Include="BPHelper.cs" />
     <Compile Include="CitadelDrezenPuzzleHelper.cs" />
     <Compile Include="DefendersHeartPuzzleHelper.cs" />
-    <Compile Include="DLC1_CommandsCourtPuzzleHelper.cs" />
+    <Compile Include="DLC1_CommandersCourtPuzzleHelper.cs" />
     <Compile Include="DLC1_DesolateHovelPuzzleHelper.cs" />
     <Compile Include="DLC1_OtherSideOfThresholdPuzzleHelper.cs" />
     <Compile Include="DLC1_ValmallossThresholdPuzzleHelper.cs" />
